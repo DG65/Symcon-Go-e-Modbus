@@ -13,10 +13,10 @@ require_once(__MODULE__ . '/GoeRegister.php');
  *
  * @version     0.1
  * @category    Symcon
- * @package     de.codeking.symcon
- * @author      Frank Herrmann <frank@codeking.de>
- * @link        https://codeking.de
- * @link        https://github.com/CodeKing/de.codeking.symcon
+ * @package     Symcon-Go-e-Modbus
+ * @author      Dietmar Gureth <dietmar.gureth@me.com>
+ * @link        
+ * @link        https://github.com/DG65/Symcon-Go-e-Modbus
  *
  */
 class GoeModbus extends Module
