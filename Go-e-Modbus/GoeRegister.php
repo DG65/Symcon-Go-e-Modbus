@@ -12,7 +12,7 @@
  * @link        https://github.com/DG65/Symcon-Go-e-Modbus
  *
  */
-class SMARegister
+class GoeRegister
 {
     /**
      * device addresses
