@@ -10,11 +10,11 @@
     },
     {
       "type": "Label",
-      "label": "www.paypal.me/codeking"
+      "label": "Dietmar Gureth"
     },
     {
       "type": "Label",
-      "label": "[ Module Settiungs ]"
+      "label": "[ Module Settings ]"
     },
     {
       "type": "Select",
@@ -26,8 +26,8 @@
           "value": "default"
         },
         {
-          "label": "Sunny Boy",
-          "value": "sunnyboy"
+          "label": "Go-e Charger",
+          "value": "goecharger"
         }
       ]
     },
