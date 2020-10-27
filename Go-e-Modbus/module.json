@@ -1,13 +1,13 @@
 {
-  "id": "{D635007F-C977-414F-B241-AA09DC3669B0}",
-  "name": "SMA ModBus",
+  "id": "{49EE30A2-A64D-2D0F-8A2D-CCE3ED2B03D9}",
+  "name": "Go-e Charger ModBus",
   "type": 3,
-  "vendor": "SMA",
+  "vendor": "Dietmar Gureth",
   "aliases": [
-    "SMA ModBus"
+    "Go-e Charger ModBus"
   ],
   "parentRequirements": [],
   "childRequirements": [],
   "implemented": [],
-  "prefix": "SMAModbus"
+  "prefix": "Go-e Charger Modbus"
 }
