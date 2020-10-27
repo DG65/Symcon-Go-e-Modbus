@@ -50,7 +50,7 @@ class GoeModbus extends Module
         $this->RegisterPropertyString('device', 'default');
         $this->RegisterPropertyString('ip', '');
         $this->RegisterPropertyInteger('port', 502);
-        $this->RegisterPropertyInteger('unit_id', 3);
+        $this->RegisterPropertyInteger('unit_id', 1);
         $this->RegisterPropertyInteger('interval', 300);
         $this->RegisterPropertyInteger('daytime', 1);
         $this->RegisterPropertyInteger('interval_current', 30);
@@ -128,7 +128,7 @@ class GoeModbus extends Module
     public function UpdateDevice($applied = false)
     {
         $this->update = 'device';
-        $this->ReadData(SMARegister::device_addresses);
+        $this->ReadData(GoeRegister::device_addresses);
 
         if ($this->applied || $applied) {
             if (isset($this->data['Device class'])) {
@@ -150,7 +150,7 @@ class GoeModbus extends Module
     {
         if ($this->_isDay() || $applied || $this->applied) {
             $this->update = 'values';
-            $this->ReadData(SMARegister::value_addresses);
+            $this->ReadData(GoeRegister::value_addresses);
         }
     }
 
@@ -161,7 +161,7 @@ class GoeModbus extends Module
     {
         if ($this->_isDay() || $this->applied) {
             $this->update = 'current';
-            $this->ReadData(SMARegister::current_addresses);
+            $this->ReadData(GoeRegister::current_addresses);
         }
     }
 
@@ -171,7 +171,7 @@ class GoeModbus extends Module
     private function SaveData()
     {
         // loop data and create variables
-        $position = ($this->update == 'values') ? count(SMARegister::device_addresses) - 1 : 0;
+        $position = ($this->update == 'values') ? count(GoeRegister::device_addresses) - 1 : 0;
         foreach ($this->data AS $key => $value) {
             $this->CreateVariableByIdentifier([
                 'parent_id' => $this->InstanceID,
