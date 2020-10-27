@@ -1,10 +1,10 @@
 {
   "translations": {
     "de": {
-      "Please enter the ip address and the tcp port of your SMA device.": "Bitte gib die IP-Adresse und den TCP Port deines SMA Gerätes ein.",
+      "Please enter the ip address and the tcp port of your Go-e Chargers device.": "Bitte gib die IP-Adresse und den TCP Port deines Go-e Chargers ein.",
       "Connection has been established.": "Verbindung wurde hergestellt.",
-      "Error: Please enter the ip address and the tcp port of your SMA device.": "Fehler: Bitte gib die IP-Adresse und den TCP Port deines SMA Gerätes ein.",
-      "Error: Could not read data from your SMA device.": "Fehler: Konnte keine Daten von deinem SMA Gerät auslesen.",
+      "Error: Please enter the ip address and the tcp port of your Go-e Chargers device.": "Fehler: Bitte gib die IP-Adresse und den TCP Port deines Go-e Chargers ein.",
+      "Error: Could not read data from your Go-e Chargers device.": "Fehler: Konnte keine Daten von deinem Go-e Chargers auslesen.",
       "IP Address": "IP Adresse",
       "Seconds": "Sekunden",
       "Interval, when all values will updating.": "Intervall, in dem alle Werte aktualisiert werden.",
