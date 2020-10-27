@@ -4,10 +4,10 @@
   "type": 3,
   "vendor": "Dietmar Gureth",
   "aliases": [
-    "Go-e Charger ModBus"
+    "Go e Charger ModBus"
   ],
   "parentRequirements": [],
   "childRequirements": [],
   "implemented": [],
-  "prefix": "Go-e Charger Modbus"
+  "prefix": "Go e Charger Modbus"
 }
