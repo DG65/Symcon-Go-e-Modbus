@@ -19,7 +19,7 @@ require_once(__MODULE__ . '/GoeRegister.php');
  * @link        https://github.com/CodeKing/de.codeking.symcon
  *
  */
-class SMAModbus extends Module
+class GoeModbus extends Module
 {
     use InstanceHelper;
 
