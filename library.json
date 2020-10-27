@@ -1,12 +1,12 @@
 {
-  "id": "{B2D91E5E-1569-407B-9E33-E5E0825A507F}",
-  "author": "CodeKing",
-  "name": "SMA Modbus",
-  "url": "https://codeking.de",
+  "id": "{49EE30A2-A64D-2D0F-8A2D-CCE3ED2B03D9}",
+  "author": "Dietmar Gureth",
+  "name": "Go-e Charger Modbus",
+  "url": "habe ich keine",
   "compatibility": {
     "version": "4.4"
   },
-  "version": "1.1",
+  "version": "1.0",
   "build": 0,
   "date": 0
 }
