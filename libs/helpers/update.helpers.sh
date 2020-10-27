@@ -5,7 +5,7 @@ DIR=$(cd `dirname $0` && pwd)
 REPO=$1
 
 if [ -z $REPO ]; then
-    REPO='de.codeking.symcon.*'
+    REPO='Symcon-Go-e-Modbus.*'
 fi
 
 # colors
