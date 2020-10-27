@@ -1,10 +1,10 @@
 {
   "id": "{49EE30A2-A64D-2D0F-8A2D-CCE3ED2B03D9}",
-  "name": "Go-e-ModBus",
+  "name": "Goe ModBus",
   "type": 3,
   "vendor": "Dietmar Gureth",
   "aliases": [
-    "Go-e Charger ModBus"
+    "Goe ModBus"
   ],
   "parentRequirements": [],
   "childRequirements": [],
