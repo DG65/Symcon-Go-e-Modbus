@@ -2,19 +2,7 @@
   "elements": [
     {
       "type": "Label",
-      "label": "[ Support ]"
-    },
-    {
-      "type": "Label",
-      "label": "If you like this module and want to support further development of my symcon modules, feel free to donate at www.paypal.me/codeking"
-    },
-    {
-      "type": "Label",
-      "label": "www.paypal.me/codeking"
-    },
-    {
-      "type": "Label",
-      "label": "___ [ Module Settiungs ] _______________________________________________________________________________"
+      "label": "Module Settings"
     },
     {
       "type": "Select",
