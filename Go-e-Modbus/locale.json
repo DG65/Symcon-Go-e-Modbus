@@ -81,7 +81,7 @@
       "enable logging": "Log Meldungen aktivieren",
       "Device": "Gerätetyp",
       "Default": "Standard",
-      "___ [ Module Settiungs ] _______________________________________________________________________________": "___ [ Modul Einstellungen ] ___________________________________________________________________________",
+      "Module Settings": "Modul Einstellungen"
     }
   }
 }
