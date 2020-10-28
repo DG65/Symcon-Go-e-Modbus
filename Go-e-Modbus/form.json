@@ -2,7 +2,7 @@
   "elements": [
     {
       "type": "Label",
-      "label": "Module Settiungs"
+      "label": "___ [ Module Settiungs ] _______________________________________________________________________________"
     },
     {
       "type": "Select",
