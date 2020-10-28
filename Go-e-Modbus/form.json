@@ -59,7 +59,7 @@
     },
     {
       "type": "Label",
-      "label": "___ [ Logging ] ________________________________________________________________________________________"
+      "label": "Logging"
     },
     {
       "type": "CheckBox",
@@ -71,7 +71,7 @@
     {
       "code": 101,
       "icon": "inactive",
-      "caption": "Please enter the ip address and the tcp port of your SMA device."
+      "caption": "Please enter the ip address and the tcp port of your Go-e device."
     },
     {
       "code": 102,
@@ -81,24 +81,24 @@
     {
       "code": 201,
       "icon": "error",
-      "caption": "Error: Please enter the ip address and the tcp port of your SMA device."
+      "caption": "Error: Please enter the ip address and the tcp port of your Go-e device."
     },
     {
       "code": 202,
       "icon": "error",
-      "caption": "Error: Could not read data from your SMA device."
+      "caption": "Error: Could not read data from your Go-e device."
     }
   ],
   "actions": [
     {
       "type": "Button",
       "label": "Read Device",
-      "onClick": "SMAModbus_UpdateDevice($id, true);"
+      "onClick": "GoeModbus_UpdateDevice($id, true);"
     },
     {
       "type": "Button",
       "label": "Update Values",
-      "onClick": "SMAModbus_UpdateValues($id, true);"
+      "onClick": "GoeModbus_UpdateValues($id, true);"
     }
   ]
 }

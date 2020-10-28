@@ -1,10 +1,10 @@
 {
   "translations": {
     "de": {
-      "Please enter the ip address and the tcp port of your SMA device.": "Bitte gib die IP-Adresse und den TCP Port deines SMA Gerätes ein.",
+      "Please enter the ip address and the tcp port of your Go-e device.": "Bitte gib die IP-Adresse und den TCP Port deines Go-e Charger ein.",
       "Connection has been established.": "Verbindung wurde hergestellt.",
-      "Error: Please enter the ip address and the tcp port of your SMA device.": "Fehler: Bitte gib die IP-Adresse und den TCP Port deines SMA Gerätes ein.",
-      "Error: Could not read data from your SMA device.": "Fehler: Konnte keine Daten von deinem SMA Gerät auslesen.",
+      "Error: Please enter the ip address and the tcp port of your Go-e device.": "Fehler: Bitte gib die IP-Adresse und den TCP Port deines Go-e Charger ein.",
+      "Error: Could not read data from your Go-e device.": "Fehler: Konnte keine Daten von deinem Go-e Charger auslesen.",
       "IP Address": "IP Adresse",
       "Seconds": "Sekunden",
       "Interval, when all values will updating.": "Intervall, in dem alle Werte aktualisiert werden.",
@@ -77,7 +77,7 @@
       "Charge with solar and mains power": "lade mit Solar- und Netzstrom",
       "Consumer power": "Leistung Verbraucher",
       "Update values on daytime only": "Werte nur zur tagsüber auslesen",
-      "___ [ Logging ] ________________________________________________________________________________________": "___ [ Debug Log ] _____________________________________________________________________________________________",
+      "Logging": "Debug Log",
       "enable logging": "Log Meldungen aktivieren",
       "Device": "Gerätetyp",
       "Default": "Standard",
