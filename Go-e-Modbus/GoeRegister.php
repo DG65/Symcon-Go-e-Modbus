@@ -24,7 +24,7 @@ class GoeRegister
              * Global
              */
             304 => [
-                'name' => 'SNR',
+                'name' => 'Device-ID',
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'ENUM',
