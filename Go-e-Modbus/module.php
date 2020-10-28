@@ -221,6 +221,7 @@ class GoeModbus extends Module
 
                 // fix bytes
                 $value = $endianness
+                    ? array_chunk($value, 6)[0]
                     ? array_chunk($value, 4)[0]
                     : array_chunk($value, 2)[1];
 
