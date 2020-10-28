@@ -2,19 +2,19 @@
   "elements": [
     {
       "type": "Label",
-      "label": "Das ist ein erstes Testmodul"
+      "label": "___ [ Support ] ________________________________________________________________________________________"
     },
     {
       "type": "Label",
-      "label": "Ich hoffe, dass es irgendwann funktionieren wird"
+      "label": "If you like this module and want to support further development of my symcon modules, feel free to donate at www.paypal.me/codeking"
     },
     {
       "type": "Label",
-      "label": "Dietmar Gureth"
+      "label": "www.paypal.me/codeking"
     },
     {
       "type": "Label",
-      "label": "[ Module Settings ]"
+      "label": "___ [ Module Settiungs ] _______________________________________________________________________________"
     },
     {
       "type": "Select",
@@ -26,8 +26,8 @@
           "value": "default"
         },
         {
-          "label": "Go-e Charger",
-          "value": "goecharger"
+          "label": "Sunny Boy",
+          "value": "sunnyboy"
         }
       ]
     },
@@ -71,7 +71,7 @@
     },
     {
       "type": "Label",
-      "label": "[ Logging ]"
+      "label": "___ [ Logging ] ________________________________________________________________________________________"
     },
     {
       "type": "CheckBox",
@@ -83,7 +83,7 @@
     {
       "code": 101,
       "icon": "inactive",
-      "caption": "Please enter the ip address and the tcp port of your Go-e Charger device."
+      "caption": "Please enter the ip address and the tcp port of your SMA device."
     },
     {
       "code": 102,
@@ -93,24 +93,24 @@
     {
       "code": 201,
       "icon": "error",
-      "caption": "Error: Please enter the ip address and the tcp port of your Go-e Charger device."
+      "caption": "Error: Please enter the ip address and the tcp port of your SMA device."
     },
     {
       "code": 202,
       "icon": "error",
-      "caption": "Error: Could not read data from your Go-e Charger device."
+      "caption": "Error: Could not read data from your SMA device."
     }
   ],
   "actions": [
     {
       "type": "Button",
       "label": "Read Device",
-      "onClick": "GoeModbus_UpdateDevice($id, true);"
+      "onClick": "SMAModbus_UpdateDevice($id, true);"
     },
     {
       "type": "Button",
       "label": "Update Values",
-      "onClick": "GoeModbus_UpdateValues($id, true);"
+      "onClick": "SMAModbus_UpdateValues($id, true);"
     }
   ]
 }
