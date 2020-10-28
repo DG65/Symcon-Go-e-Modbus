@@ -100,7 +100,7 @@ class GoeModbus extends Module
             // check register on apply changes in configuration
             if ($this->applied) {
                 try {
-                    $this->modbus->readMultipleRegisters($this->unit_id, (int)30051, 2);
+                    $this->modbus->readMultipleRegisters($this->unit_id, (int)100, 2);
                 } catch (Exception $e) {
                     $this->SetStatus(202);
                     exit(-1);
