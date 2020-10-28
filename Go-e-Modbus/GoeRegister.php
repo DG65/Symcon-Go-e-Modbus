@@ -23,15 +23,28 @@ class GoeRegister
             /**
              * Global
              */
-            304 => [
+            100 => [
+                'name' => 'Device class',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'ENUM',
+                'mapping' => [
+                    0 => 'unbekannt, Ladestation defekt',
+                    1 => 'Ladestation bereit, kein Fahrzeug',
+                    2 => 'Fahrzeug lädt',
+                    3 => 'Warte auf Fahrzeug',
+                    4 => 'Ladung beendet, Fahrzeug noch verbunden',
+                ]
+            ],
+            101 => [
                 'name' => 'Device-ID',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'FIX0',
+                'format' => 'ENUM',
                 'mapping' => [
-                    9000 => 'SWR 700',
-                    9001 => 'SWR 850',
-                    9002 => 'SWR 850E',
+                    0 => 'SWR 700',
+                    13 => 'SWR 850',
+                    14 => 'SWR 850E',
                     9003 => 'SWR 1100',
                     9004 => 'SWR 1100E',
                     9005 => 'SWR 1100LV',
