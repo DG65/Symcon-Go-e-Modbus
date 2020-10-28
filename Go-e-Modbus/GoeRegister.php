@@ -27,7 +27,7 @@ class GoeRegister
                 'name' => 'Device-ID',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'ENUM',
+                'format' => 'FIX0',
                 'mapping' => [
                     9000 => 'SWR 700',
                     9001 => 'SWR 850',
