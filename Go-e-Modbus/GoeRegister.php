@@ -24,8 +24,14 @@ class GoeRegister
              * Global
              */
             304 => [
-                'name' => 'Serial',
+                'name' => 'SNR',
                 'count' => 6,
+                'type' => 'U32',
+                'format' => 'ENUM',
+            ],
+            30057 => [
+                'name' => 'Serial',
+                'count' => 2,
                 'type' => 'U32',
                 'format' => 'RAW'
             ],
