@@ -360,11 +360,11 @@ class GoeRegister
                     9317 => 'SB 5400TL-JP-22',
                 ]
             ],
-            30057 => [
-                'name' => 'Serial',
+            108 => [
+                'name' => 'Spannung_L1',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'RAW'
+                'format' => 'FIX0'
             ],
             30231 => [
                 'name' => 'Power limit',
