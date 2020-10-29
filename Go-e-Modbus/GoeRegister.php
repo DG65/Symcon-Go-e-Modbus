@@ -27,7 +27,7 @@ class GoeRegister
                 'name' => 'Device class',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'ENUM',
+                'format' => 'FIX0',
                 'mapping' => [
                     0 => 'unbekannt, Ladestation defekt',
                     1 => 'Ladestation bereit, kein Fahrzeug',
@@ -40,7 +40,7 @@ class GoeRegister
                 'name' => 'Device-ID',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'ENUM',
+                'format' => 'FIX0',
                 'mapping' => [
                     0 => 'SWR 700',
                     13 => 'SWR 850',
