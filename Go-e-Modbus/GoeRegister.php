@@ -65,6 +65,12 @@ class GoeRegister
                     32 => '32 A'
                 ]
             ],
+            105 => [
+                'name' => 'FWV',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX0'
+            ],
             107 => [
                 'name' => 'ERROR',
                 'count' => 2,
@@ -77,79 +83,61 @@ class GoeRegister
                     10 => 'INTERNAL'
                 ]
             ],
-            105 => [
-                'name' => 'FWV',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0'
-            ],
-            30231 => [
-                'name' => 'Power limit',
+            108 => [
+                'name' => 'VOLT_L1',
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0',
-                'profile' => 'Watt'
+                'profile' => '~Volt'
             ],
-            30837 => [
-                'name' => 'Active power target value',
+            110 => [
+                'name' => 'VOLT_L2',
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0',
-                'profile' => 'Watt'
-            ]
-        ],
-        'sunnyboy' => [
-            30231 => [
-                'name' => 'Power limit',
+                'profile' => '~Volt'
+            ],
+            112 => [
+                'name' => 'VOLT_L3',
                 'count' => 2,
                 'type' => 'U32',
                 'format' => 'FIX0',
-                'profile' => 'Watt'
+                'profile' => '~Volt'
             ],
-        ]
-    ];
-
-    /**
-     * value addresses
-     * addresses with updated values
-     */
-    const value_addresses = [
-        'default' => [
-            /**
-             * Global
-             */
-            30201 => [
-                'name' => 'Status',
+            114 => [
+                'name' => 'AMP_L1',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'ENUM',
-                'mapping' => [
-                    35 => 'Error',
-                    303 => 'Off',
-                    307 => 'OK',
-                    455 => 'Warning'
-                ]
+                'format' => 'FIX1',
+                'profile' => '~Ampere'
             ],
-            30541 => [
-                'name' => 'Operating time',
+            116 => [
+                'name' => 'AMP_L2',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'DURATION_S',
-                'profile' => 'Hours'
+                'format' => 'FIX1',
+                'profile' => '~Ampere'
             ],
-            30543 => [
-                'name' => 'Feed-in time',
+            118 => [
+                'name' => 'AMP_L3',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'DURATION_S',
-                'profile' => 'Hours'
+                'format' => 'FIX1',
+                'profile' => '~Ampere'
             ],
-            30535 => [
-                'name' => 'Day yield',
+            120 => [
+                'name' => 'POWER_TOTAL',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'FIX3', // convert Wh to kWh
-                'profile' => '~Electricity',
+                'format' => 'FIX2',
+                'profile' => 'kWh.Fixed'
+            ],
+            128 => [
+                'name' => 'ENERGY_TOTAL',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX1',
+                'profile' => 'kWh.Fixed',
                 'archive' => 1 // archive: counter
             ],
             30531 => [
