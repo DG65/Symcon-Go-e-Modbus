@@ -157,7 +157,7 @@ class GoeModbus extends Module
 
     /**
      * update current values, only
-     */
+
     public function UpdateCurrent()
     {
         if ($this->_isDay() || $this->applied) {
