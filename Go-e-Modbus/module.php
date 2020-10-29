@@ -100,7 +100,7 @@ class GoeModbus extends Module
             // check register on apply changes in configuration
             if ($this->applied) {
                 try {
-                    $this->modbus->readMultipleInputRegisters($this->unit_id, (int)30051, 2);
+                    $this->modbus->readMultipleRegisters($this->unit_id, (int)30051, 2);
                 } catch (Exception $e) {
                     $this->SetStatus(202);
                     exit(-1);
@@ -214,7 +214,7 @@ class GoeModbus extends Module
                 }
 
                 // read register
-                $value = $this->modbus->readMultipleRegisters($this->unit_id, (int)$address, $config['count']);
+                $value = $this->modbus->readMultipleInputRegisters($this->unit_id, (int)$address, $config['count']);
 
                 // set endianness
                 $endianness = in_array($config['format'], ['RAW', 'TEMP', 'DURATION_S', 'DURATION_H']) ? 2 : 0;
