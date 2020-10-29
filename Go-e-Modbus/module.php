@@ -130,7 +130,6 @@ class GoeModbus extends Module
         $this->update = 'device';
         $this->ReadData(GoeRegister::device_addresses);
 
-    /**
         if ($this->applied || $applied) {
             if (isset($this->data['CAR_STATE'])) {
                 if (!isset($this->data['PP_CABLE'])) {
@@ -141,7 +140,7 @@ class GoeModbus extends Module
                 echo sprintf($this->Translate('Unfortunately no device were found. Please try again in a few seconds.'));
             }
         }
-         */  
+  
     }
 
     /**

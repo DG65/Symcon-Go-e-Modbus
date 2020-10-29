@@ -69,7 +69,7 @@ class GoeRegister
                 'name' => 'ERROR',
                 'count' => 2,
                 'type' => 'U16',
-                'format' => 'FIX0',
+                'format' => 'ENUM',
                 'mapping' => [
                     1 => 'RCCB',
                     3 => 'PHASE',
@@ -81,7 +81,7 @@ class GoeRegister
                 'name' => 'FWV',
                 'count' => 2,
                 'type' => 'U32',
-                'format' => 'ENUM'
+                'format' => 'FIX0'
             ],
             30231 => [
                 'name' => 'Power limit',
