@@ -135,7 +135,7 @@ class GoeModbus extends Module
                 if (!isset($this->data['PP_CABLE'])) {
                     $this->data['PP_CABLE'] = '';
                 }
-                echo sprintf($this->Translate('%s %s has been detected.');
+                echo sprintf($this->Translate('%s %s has been detected.'), $this->Translate($this->data['Device class']), $this->data['Device-ID']);
             } else {
                 echo sprintf($this->Translate('Unfortunately no device were found. Please try again in a few seconds.'));
             }
@@ -337,12 +337,6 @@ class GoeModbus extends Module
                 IPS_CreateVariableProfile($profile_id, 2); // float
                 IPS_SetVariableProfileDigits($profile_id, 0); // 0 decimals
                 IPS_SetVariableProfileText($profile_id, '', ' W'); // Watt
-                IPS_SetVariableProfileIcon($profile_id, 'Electricity');
-                break;
-            case 'Kilowatt':
-                IPS_CreateVariableProfile($profile_id, 2); // float
-                IPS_SetVariableProfileDigits($profile_id, 2); // 2 decimals
-                IPS_SetVariableProfileText($profile_id, '', ' kW'); // Kilowatt
                 IPS_SetVariableProfileIcon($profile_id, 'Electricity');
                 break;
             case 'kWh.Fixed':
