@@ -38,7 +38,7 @@ class GoeRegister
             ],
             101 => [
                 'name' => 'Device-ID',
-                'count' => 1,
+                'count' => 2,
                 'type' => 'U16',
                 'format' => 'FIX0',
                 'mapping' => [
