@@ -132,9 +132,9 @@ class GoeModbus extends Module
 
     /**
         if ($this->applied || $applied) {
-            if (isset($this->data['Device class'])) {
-                if (!isset($this->data['Device-ID'])) {
-                    $this->data['Device-ID'] = '';
+            if (isset($this->data['CAR_STATE'])) {
+                if (!isset($this->data['PP_CABLE'])) {
+                    $this->data['PP_CABLE'] = '';
                 }
                 echo sprintf($this->Translate('%s %s has been detected.'), $this->Translate($this->data['Device class']), $this->data['Device-ID']);
             } else {

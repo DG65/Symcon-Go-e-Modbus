@@ -27,7 +27,7 @@ class GoeRegister
                 'name' => 'CAR_STATE',
                 'count' => 2,
                 'type' => 'U16',
-                'format' => 'FIX0',
+                'format' => 'ENUM',
                 'mapping' => [
                     0 => 'unbekannt, Ladestation defekt',
                     1 => 'Ladestation bereit, kein Fahrzeug',
@@ -40,7 +40,7 @@ class GoeRegister
                 'name' => 'PP_CABLE',
                 'count' => 2,
                 'type' => 'U16',
-                'format' => 'FIX0',
+                'format' => 'ENUM',
                 'mapping' => [
                     0 => 'kein Kabel',
                     13 => '13 A',
@@ -63,7 +63,18 @@ class GoeRegister
                     30 => '30 A',
                     31 => '31 A',
                     32 => '32 A'
-
+                ]
+            ],
+            107 => [
+                'name' => 'ERROR',
+                'count' => 2,
+                'type' => 'U16',
+                'format' => 'ENUM',
+                'mapping' => [
+                    1 => 'RCCB',
+                    3 => 'PHASE',
+                    8 => 'NO_GROUND',
+                    10 => 'INTERNAL'
                 ]
             ],
             105 => [
