@@ -26,7 +26,7 @@ class GoeRegister
             100 => [
                 'name' => 'Device class',
                 'count' => 2,
-                'type' => 'U32',
+                'type' => 'U16',
                 'format' => 'FIX0',
                 'mapping' => [
                     0 => 'unbekannt, Ladestation defekt',
@@ -39,7 +39,7 @@ class GoeRegister
             101 => [
                 'name' => 'Device-ID',
                 'count' => 2,
-                'type' => 'U32',
+                'type' => 'U16',
                 'format' => 'FIX0',
                 'mapping' => [
                     0 => 'SWR 700',

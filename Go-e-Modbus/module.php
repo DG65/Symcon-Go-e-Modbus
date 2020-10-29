@@ -26,7 +26,7 @@ class GoeModbus extends Module
     private $device;
     private $ip;
     private $port;
-    private $unit_id = 1;
+    private $unit_id = 3;
 
     private $modbus;
     private $update = true;
