@@ -124,7 +124,7 @@ class GoeModbus extends Module
     /**
      * read & update device registersSMA_UpdateDevice
      * @param bool $applied
-     */
+
     public function UpdateDevice($applied = false)
     {
         $this->update = 'device';
@@ -141,6 +141,8 @@ class GoeModbus extends Module
             }
         }
     }
+
+     */
 
     /**
      * read & update update registers

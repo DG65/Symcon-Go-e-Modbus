@@ -50,7 +50,8 @@
       "Grid current phase L1": "Netzstrom L1",
       "Grid current phase L2": "Netzstrom L2",
       "Grid current phase L3": "Netzstrom L3",
-      "Device class": "Geräteklasse",
+      "CAR_STATE": "Status PWM Signalisierung",
+      "FWV": "Firmware Version"
       "SNR": "Seriennummer",
       "Operating time": "Betriebszeit",
       "Feed-in time": "Einspeisezeit",
@@ -78,7 +79,7 @@
       "Update values on daytime only": "Werte nur zur tagsüber auslesen",
       "Logging": "Debug Log",
       "enable logging": "Log Meldungen aktivieren",
-      "Device": "Gerätetyp",
+      "Device-ID": "Kabel Ampere codierung",
       "Default": "Standard",
       "Module Settings": "Modul Einstellungen"
     }
