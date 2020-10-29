@@ -18,7 +18,7 @@ class GoeRegister
      * device addresses
      * addresses with fixed values
      */
-    const value_addresses = [
+    const device_addresses = [
         'default' => [
             /**
              * Global
