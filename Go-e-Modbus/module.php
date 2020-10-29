@@ -124,12 +124,13 @@ class GoeModbus extends Module
     /**
      * read & update device registersSMA_UpdateDevice
      * @param bool $applied
-
+     */
     public function UpdateDevice($applied = false)
     {
         $this->update = 'device';
         $this->ReadData(GoeRegister::device_addresses);
 
+    /**
         if ($this->applied || $applied) {
             if (isset($this->data['Device class'])) {
                 if (!isset($this->data['Device-ID'])) {
@@ -140,9 +141,8 @@ class GoeModbus extends Module
                 echo sprintf($this->Translate('Unfortunately no device were found. Please try again in a few seconds.'));
             }
         }
+         */  
     }
-
-     */
 
     /**
      * read & update update registers
