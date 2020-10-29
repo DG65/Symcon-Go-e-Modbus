@@ -135,7 +135,7 @@ class GoeModbus extends Module
                 if (!isset($this->data['PP_CABLE'])) {
                     $this->data['PP_CABLE'] = '';
                 }
-                echo sprintf($this->Translate('%s %s has been detected.');
+                echo sprintf($this->Translate('%s %s has been detected.'), $this->Translate($this->data['CAR_STATE']), $this->data['PP_CABLE']);
             } else {
                 echo sprintf($this->Translate('Unfortunately no device were found. Please try again in a few seconds.'));
             }
