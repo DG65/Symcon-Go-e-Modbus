@@ -69,7 +69,7 @@ class GoeRegister
                 'name' => 'ERROR',
                 'count' => 2,
                 'type' => 'U16',
-                'format' => 'ENUM',
+                'format' => 'FIX0',
                 'mapping' => [
                     1 => 'RCCB',
                     3 => 'PHASE',
