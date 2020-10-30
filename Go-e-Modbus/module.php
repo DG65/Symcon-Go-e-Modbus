@@ -5,7 +5,7 @@ define('__MODULE__', dirname(__FILE__));
 
 require_once(__ROOT__ . '/libs/helpers/autoload.php');
 require_once(__ROOT__ . '/libs/phpmodbus/Phpmodbus/ModbusMaster.php');
-require_once(__MODULE__ . '/GoeRegister.php');
+require_once(__MODULE__ . '/SMARegister.php');
 
 /**
  * Class SMA_Modbus
@@ -140,7 +140,6 @@ class GoeModbus extends Module
                 echo sprintf($this->Translate('Unfortunately no device were found. Please try again in a few seconds.'));
             }
         }
-  
     }
 
     /**
