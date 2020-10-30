@@ -23,6 +23,54 @@ class GoeRegister
             /**
              * Global
              */
+            105 => [
+                'name' => 'FWV',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX0'
+            ],
+            107 => [
+                'name' => 'ERROR',
+                'count' => 2,
+                'type' => 'U16',
+                'format' => 'ENUM',
+                'mapping' => [
+                    1 => 'RCCB',
+                    3 => 'PHASE',
+                    8 => 'NO_GROUND',
+                    10 => 'INTERNAL'
+                ]
+            ],
+            120 => [
+                'name' => 'POWER_TOTAL',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX2',
+                'profile' => 'kWh.Fixed'
+            ],
+            128 => [
+                'name' => 'ENERGY_TOTAL',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX1',
+                'profile' => 'kWh.Fixed',
+                'archive' => 1 // archive: counter
+            ]
+        ],
+        'sunnyboy' => [
+
+        ]
+    ];
+
+    /**
+     * value addresses
+     * addresses with updated values
+     */
+    const value_addresses = [
+        'default' => [
+            /**
+             * Global
+             */
             100 => [
                 'name' => 'CAR_STATE',
                 'count' => 2,
@@ -64,25 +112,6 @@ class GoeRegister
                     31 => '31 A',
                     32 => '32 A'
                 ]
-            ],
-            105 => [
-                'name' => 'FWV',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0'
-            ],
-            107 => [
-                'name' => 'ERROR',
-                'count' => 2,
-                'type' => 'U16',
-                'format' => 'ENUM',
-                'mapping' => [
-                    1 => 'RCCB',
-                    3 => 'PHASE',
-                    8 => 'NO_GROUND',
-                    10 => 'INTERNAL'
-                ]
-            ],
             120 => [
                 'name' => 'POWER_TOTAL',
                 'count' => 2,
@@ -150,7 +179,7 @@ class GoeRegister
                 'type' => 'U32',
                 'format' => 'FIX1',
                 'profile' => '~Ampere'
-            ],
+            ]
         ],
         'sunnyboy' => [
 
