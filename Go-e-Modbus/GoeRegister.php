@@ -83,48 +83,6 @@ class GoeRegister
                     10 => 'INTERNAL'
                 ]
             ],
-            108 => [
-                'name' => 'VOLT_L1',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => '~Volt'
-            ],
-            110 => [
-                'name' => 'VOLT_L2',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => '~Volt'
-            ],
-            112 => [
-                'name' => 'VOLT_L3',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => '~Volt'
-            ],
-            114 => [
-                'name' => 'AMP_L1',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX1',
-                'profile' => '~Ampere'
-            ],
-            116 => [
-                'name' => 'AMP_L2',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX1',
-                'profile' => '~Ampere'
-            ],
-            118 => [
-                'name' => 'AMP_L3',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX1',
-                'profile' => '~Ampere'
-            ],
             120 => [
                 'name' => 'POWER_TOTAL',
                 'count' => 2,
@@ -408,13 +366,48 @@ class GoeRegister
      */
     const current_addresses = [
         'default' => [
-            30775 => [
-                'name' => 'AC active power across all phases',
+            108 => [
+                'name' => 'VOLT_L1',
                 'count' => 2,
-                'type' => 'S32',
+                'type' => 'U32',
                 'format' => 'FIX0',
-                'profile' => 'Watt'
-            ]
+                'profile' => '~Volt'
+            ],
+            110 => [
+                'name' => 'VOLT_L2',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX0',
+                'profile' => '~Volt'
+            ],
+            112 => [
+                'name' => 'VOLT_L3',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX0',
+                'profile' => '~Volt'
+            ],
+            114 => [
+                'name' => 'AMP_L1',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX1',
+                'profile' => '~Ampere'
+            ],
+            116 => [
+                'name' => 'AMP_L2',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX1',
+                'profile' => '~Ampere'
+            ],
+            118 => [
+                'name' => 'AMP_L3',
+                'count' => 2,
+                'type' => 'U32',
+                'format' => 'FIX1',
+                'profile' => '~Ampere'
+            ],
         ],
         'sunnyboy' => [
             30775 => [
