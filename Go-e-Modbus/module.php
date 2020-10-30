@@ -5,7 +5,7 @@ define('__MODULE__', dirname(__FILE__));
 
 require_once(__ROOT__ . '/libs/helpers/autoload.php');
 require_once(__ROOT__ . '/libs/phpmodbus/Phpmodbus/ModbusMaster.php');
-require_once(__MODULE__ . '/SMARegister.php');
+require_once(__MODULE__ . '/GoeRegister.php');
 
 /**
  * Class SMA_Modbus
