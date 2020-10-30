@@ -131,11 +131,11 @@ class GoeModbus extends Module
         $this->ReadData(GoeRegister::device_addresses);
 
         if ($this->applied || $applied) {
-            if (isset($this->data['CAR_STATE'])) {
-                if (!isset($this->data['PP_CABLE'])) {
-                    $this->data['PP_CABLE'] = '';
+            if (isset($this->data['FWV'])) {
+                if (!isset($this->data['ERROR'])) {
+                    $this->data['ERROR'] = '';
                 }
-                echo sprintf($this->Translate('%s %s has been detected.'), $this->Translate($this->data['CAR_STATE']), $this->data['PP_CABLE']);
+                echo sprintf($this->Translate('%s %s has been detected.'), $this->Translate($this->data['FWV']), $this->data['ERROR']);
             } else {
                 echo sprintf($this->Translate('Unfortunately no device were found. Please try again in a few seconds.'));
             }
