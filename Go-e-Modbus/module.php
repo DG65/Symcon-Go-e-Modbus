@@ -146,18 +146,18 @@ class GoeModbus extends Module
     /**
      * read & update update registers
      * @param bool $applied
-
+     */
     public function UpdateValues($applied = false)
     {
         if ($this->_isDay() || $applied || $this->applied) {
             $this->update = 'values';
-            $this->ReadData(GoeRegister::device_addresses);
+            $this->ReadData(GoeRegister::value_addresses);
         }
     }
 
     /**
      * update current values, only
-
+     */
     public function UpdateCurrent()
     {
         if ($this->_isDay() || $this->applied) {
