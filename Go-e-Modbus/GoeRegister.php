@@ -55,6 +55,7 @@ class GoeRegister
                 'format' => 'FIX1',
                 'profile' => 'kWh.Fixed',
                 'archive' => 1 // archive: counter
+                ]
             ],
         'sunnyboy' => [
 
