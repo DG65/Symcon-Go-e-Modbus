@@ -55,8 +55,7 @@ class GoeRegister
                 'format' => 'FIX1',
                 'profile' => 'kWh.Fixed',
                 'archive' => 1 // archive: counter
-            ]
-        ],
+            ],
         'sunnyboy' => [
 
         ]
@@ -112,6 +111,7 @@ class GoeRegister
                     31 => '31 A',
                     32 => '32 A'
                 ]
+            ],
             120 => [
                 'name' => 'POWER_TOTAL',
                 'count' => 2,
@@ -126,8 +126,7 @@ class GoeRegister
                 'format' => 'FIX1',
                 'profile' => 'kWh.Fixed',
                 'archive' => 1 // archive: counter
-            ]
-        ],
+            ],
         'sunnyboy' => [
 
         ]
@@ -179,7 +178,6 @@ class GoeRegister
                 'type' => 'U32',
                 'format' => 'FIX1',
                 'profile' => '~Ampere'
-            ]
         ],
         'sunnyboy' => [
 
